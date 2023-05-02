@@ -1,0 +1,12 @@
+{
+  "builtin_apps_url": {
+    "chrome": {
+      "url": "chrome://newtabs",
+      "type": "normal"
+    },
+    "files": {
+      "url": "chrome://file-manager",
+      "type": "popup"
+    }
+  }
+}

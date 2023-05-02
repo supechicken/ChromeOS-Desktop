@@ -1,0 +1,32 @@
+.entry {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  height: 70px;
+  width: 70px;
+}
+
+.entry > * {
+  margin: 0;
+}
+
+.entry > p {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  color: white;
+  text-shadow: 0 0 5px black;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.entry > img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+#widget {
+  position: fixed;
+  right: 0.2in;
+  top: 10px;
+}

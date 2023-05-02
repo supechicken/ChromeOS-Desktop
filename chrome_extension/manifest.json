@@ -1,0 +1,12 @@
+
+{
+  "manifest_version": 3,
+  "name": "ChromeOS Desktop",
+  "version": "0.1",
+  "description": "Place your shortcuts and widgets on the desktop",
+  "author": "supechicken666@gmail.com",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["offscreen", "tabs"]
+}
