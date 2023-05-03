@@ -3,9 +3,10 @@ const { WebSocketServer } = require('ws');
 
 const wss = new WebSocketServer({ port: 25600 });
 
-let sendRequestToChrome;
+let sendRequestToChrome, wsConnected = false;
 
 wss.on('connection', ws => {
+  ws.on('open', () => { wsConnected = true; });
   ws.on('error', console.error);
   ws.on('message', data => console.log('received: %s', data));
 
@@ -16,6 +17,10 @@ wss.on('connection', ws => {
 
 window.addEventListener('DOMContentLoaded', () => {
   contextBridge.exposeInMainWorld('openURL', url => {
-    sendRequestToChrome({request: 'openURL', url: url});
+    if (!wsConnected) {
+      alert('Cannot communicate with the extension. (wait a few seconds and try again?)');
+    } else {
+      sendRequestToChrome({request: 'openURL', url: url});
+    }
   });
 })
