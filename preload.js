@@ -18,7 +18,7 @@ wss.on('connection', ws => {
 window.addEventListener('DOMContentLoaded', () => {
   contextBridge.exposeInMainWorld('openURL', url => {
     if (!wsConnected) {
-      alert('Cannot communicate with the extension. (wait a few seconds and try again?)');
+      alert('Cannot communicate with the integration extension. (wait a few seconds and try again?)');
     } else {
       sendRequestToChrome({request: 'openURL', url: url});
     }
