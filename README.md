@@ -4,9 +4,9 @@
 ### Note: This project is still developing, it might not be stable enough
 
 ## If you want to try it out...
-- Install Node on your Linux VM:
+- Install dependencies on your Linux VM:
 ```shell
-sudo apt install nodejs npm
+sudo apt install nodejs npm libnss3
 ```
 
 - Download [archive](https://github.com/supechicken/ChromeOS-Desktop/archive/refs/heads/main.zip) of this repository
