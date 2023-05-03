@@ -19,7 +19,7 @@ npm install --save-dev electron
 
 - Run `npm start` on the root of this repository
 - Create a new virtual desktop, drag the overlay window into it
-- Sideload the integration extension (located in `/chrome_extension`)
+- Sideload the integration extension (located in `/chrome_extension`) (see [here](https://github.com/supechicken/ChromeOS-LivePaper#installation) for a detailed instructions)
 - Switch to the virtual desktop created previously and try it out
 
 ## How it works?
